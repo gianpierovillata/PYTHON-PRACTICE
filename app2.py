@@ -13,7 +13,7 @@ def calculo_pagar(cuotas,precio_cuotas):
 def imprmir_datos(nombre,dni,edad,telefono):
     cuotas =int(input("Numero de cuotas:"))
     precio_cuotas =float(input("Precio de cada cuota:"))
-    total_pagar =calculo_pagar(cuotas,precio_cuotas)
+  
     print("----------------Formulario de datos ----------------")
     print("Nombre: ",nombre)
     print("DNI: ",dni)
@@ -25,6 +25,7 @@ def imprmir_datos(nombre,dni,edad,telefono):
     print("-----------------COUTAS---------------------------")
     print("Cuotas: ", cuotas)
     print("Precio de cuotas", precio_cuotas)
+    total_pagar =calculo_pagar(cuotas,precio_cuotas)
     print("Total a pagar:" ,total_pagar)
     print("---------------------------------------------------")
 
