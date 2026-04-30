@@ -1,10 +1,10 @@
-from datetime import date
+from datetime import date,datetime
 class Persona:
     
     
     #propiedades
     nombre:str
-    apllido:str
+    apellido:str
     edad:int
     sexo:str
     fecha_nac:date
@@ -21,7 +21,7 @@ class Persona:
         self.sexo=sexo
         self.altura =altura
         self.peso=peso
-        self.fecha_nac=self.fecha_nac
+        self.fecha_nac=fecha_nac
 
     def imprimir_datos(self): 
         print("--------------------DATOS DE LA PERSONA ---------------------------")
@@ -39,9 +39,9 @@ edad=int(input("Ingrese su edad:"))
 sexo=str(input("Ingrese el sexo (M-F):"))
 altura=float(input("Ingrese la altura en metros:"))
 peso=float(input("Ingrese el peso:"))
-fecha_nac =date(input("Ingrese la fecha de nacimiento"))
+fecha_nac =date.strptime(input("Ingrese la fecha de nacimiento DD/MM/YYYY"))
 
 persona =Persona(nombre,apellido,edad,sexo,altura,peso,fecha_nac)
-persona.imprimir_datos(persona)
+persona.imprimir_datos()
 
             
