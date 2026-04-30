@@ -29,9 +29,9 @@ class Persona:
         print("Apellido",self.apellido)
         print("Edad",self.edad)
         print("Sexo",self.sexo)
-        print("Peso: ",peso)
-        print("Altura", altura)
-        print("Fecha Nacimiento: ", fecha_nac)
+        print("Peso: ",self.peso)
+        print("Altura", self.altura)
+        print("Fecha Nacimiento: ", self.fecha_nac.strftime("%d/%m/%Y"))
         print("--------------------------------------------------------------------")
 
 
