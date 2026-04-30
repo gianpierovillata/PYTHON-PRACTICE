@@ -43,6 +43,8 @@ while activo == True:
     print("El usuario"+nombre+"esta activo")
     activo=False
 
+    
+
 
 
 
